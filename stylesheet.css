@@ -1,0 +1,64 @@
+#main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(197, 255, 220);
+	width: 250px;
+	height: 300px;
+	
+}
+
+#container {
+	display: grid;
+	grid-template-columns: repeat(4, 50px);
+	grid-template-rows: minmax(50px, auto) repeat(5, 40px);
+	gap: 2px;
+	border-style: solid;
+	border-width: 5px;
+	padding: 10px;
+}
+
+button {
+	margin: 2px;
+	border-style: solid;
+	border-width: 2px;
+	font-weight: bold;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+#display {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: flex-end;
+	grid-column: 1 / -1;
+	height: 30px;
+	border-style: solid;
+	border-color: white;
+	border-width: 5px;
+	margin: 8px;
+	padding-right: 15px;
+}
+
+.num {
+	background-color: #217C7E;
+}
+
+.operation {
+	background-color: dodgerblue;
+}
+.calc {
+	background-color: dodgerblue;
+}
+
+.clear {
+	grid-column: span 3;
+	background-color: #FFFF;
+}
+
+#zero {
+	grid-column: span 2;
+}
